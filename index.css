@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&display=swap');
+
+*{
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --gray : #6B7280;
+    --dark : #374151;
+    --darker : #1F2937;
+    --darkest : #111827;
+    --light : #EEE;
+    --pink : #EC4899;
+    --purple : #8B5CF6;
+}
+
+body {
+    display : flex;
+    flex-direction : column;
+    min-height : 100vh;
+    background-image: linear-gradient(to right, #09203F, #537895);
+    color : #FFF;
+    font-family: 'Baloo Bhaina 2', cursive;
+}
+
+header {
+    padding : 2rem 1rem;
+    max-width : 800px;
+    width : 100%;
+    margin : 0 auto;
+}
+
+header h1 {
+    font-size : 2.5rem;
+    font-weight : 10;
+    color: #FFF;
+    margin-bottom : 0.5rem;
+    display: flex;
+    justify-content : center;
+
+}
+
+#new-task-form {
+    display : flex;
+    /* flex-direction : column; */
+}
+
+input, button {
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+#new-task-input {
+    flex : 1 1 0%;
+    background-color: var(--darker);
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-right: 1rem;
+    color: var(--light);
+    font-size: 1.25rem;
+}
+
+#new-task-submit {
+    color : var(--pink);
+    font-size : 1.25rem;
+    font-weight : 700;
+    background-image: linear-gradient(to right, rgb(200, 132, 5), rgb(195, 199, 80));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+}
+
+#new-task-submit:hover {
+    opacity: 0.8;
+}
+
+main {
+    flex: 1 1 0%;
+    max-width: 800px; 
+    width : 100%; 
+    margin: 0 auto;
+}
+
+ .task-list {
+    padding: 1rem;
+}
+
+.task-list h2 {
+    font-size: 1.5rem;
+    font-weight: 10;
+    margin-bottom: 1rem; 
+    display: flex;
+    justify-content: center;  
+}
+
+.content {
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+}
+
+#tasks {
+    padding: 1rem;
+    background:#09203F;
+    border: 2px solid black;
+    border-radius: 1rem;
+    box-shadow: 3px 4px rgb(0, 0, 0);
+}
+
+.task {
+    display: flex;
+    justify-content: space-between;
+}
+
+.task input {
+    width: 100%;
+    padding: 8px 20px;
+    margin: 10px;
+    border-radius: 1rem;
+    background-color: var(--darkest);
+    color: var(--light);
+    font-size: 1.125rem;
+    font-family: 'Baloo Bhaina 2', cursive;
+    font-weight: 300;
+}
+
+p {
+    font-family: 'Baloo Bhaina 2', cursive;
+    font-size: 1.25rem;
+    display: flex;
+    justify-content: center;
+}
+
+.task .content {
+    display: flex;
+}
+
+.delete {
+    font-size : 1rem;
+    cursor: pointer;
+    color: crimson;
+}
+
+.delete:hover {
+    color: rgb(214, 86, 112);
+}
